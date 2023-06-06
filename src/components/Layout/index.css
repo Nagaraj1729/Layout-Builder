@@ -1,0 +1,19 @@
+.layout-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.layout-content {
+  width: 85%;
+  max-width: 1000px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .layout-content {
+    min-height: 900px;
+  }
+}

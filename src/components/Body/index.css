@@ -1,0 +1,117 @@
+.body-container {
+  flex-grow: 1;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navbar {
+  background-color: #e2e8f0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.navbar-title {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar-items-list {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.left-navbar-item {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 25%;
+    align-items: flex-start;
+  }
+  .navbar-items-list {
+    flex-direction: column;
+    padding-left: 10px;
+  }
+}
+
+.body-content-container {
+  background-color: #f1f5f9;
+  padding: 30px;
+  flex-grow: 1;
+}
+.content-title {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+}
+.content-text {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .body-content-container {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .body-content-container {
+    flex-grow: 1;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+}
+
+.right-navbar-item {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #475569;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .right-navbar-item {
+    width: 110px;
+    height: 150px;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .right-navbar-item {
+    width: 180px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+}
